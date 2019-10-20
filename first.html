@@ -1,0 +1,132 @@
+<html>
+    <head>
+        
+        
+        <link href="style2.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+		
+		
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+        
+        
+        
+        
+        <style>
+    #msg {
+    visibility: hidden;
+    min-width: 250px;
+    background-color:yellow;
+    color: #000;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    right: 30%;
+    top: 30px;
+    font-size: 17px;
+	margin-right:30px;
+}
+
+#msg.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {top: 30px; opacity: 1;} 
+    to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}
+    </style>
+    </head>
+    <body>
+        <div class=container>
+            <div class="row">
+                <div class="col-sm-6">
+                <div class="slider-frame">
+                <div class="slide-images">
+                <div class="img-container">
+                    <img src="image/image 1.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="image/image 2.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="image/image 3.jpg">
+                </div>
+          </div>
+      </div>
+                    </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="right-column text-center">
+                
+                    <p class="info">If you can't travel the world .We will experience you to see the world digitally.</p>
+                        <div class="icons">
+						<ul class="list-icons">
+							<i class="fab fa-facebook-f"><li class="item" href="https://www.facebook.com/"></li></i>
+							<i class="fa fa-google-plus-square"><li class="item" href="https://accounts.google.com/servicelogin#identifier"></li></i>
+							<i class="fab fa-linkedin-in"><li class="item" href="https://www.linkedin.com/"></li></i>
+						</ul>
+					</div>
+                    
+                    <p class="or">OR</p>
+                    <form>
+                        <div class="form-group">
+                        
+                        <input type="email" class="form-control" placeholder="Moblie Number or Email" required>
+                        </div>
+                        <div class="form-group">
+                            
+                        <input type="text" class="form-control" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Username" required>
+                        </div>
+                        <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required >
+                        
+                        </div>
+						<br>
+                        <a href="comingsoon.html"><button type="submit" class="btn btn-primary btn-block" onclick="myFunction()">Sign Up</button></a>
+                        <div id="msg">Congratulations You Sign Up successfully!!</div>
+                        <script>
+function myFunction() {
+    var x = document.getElementById("msg");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+                    </form>
+					<br>
+					
+                    <p class="terms" ><input type="checkbox" value="terms & Cond">By signing up,you agree to our<b>Terms,Data Policy</b>and <b>Cookies Policy</b>.</p>
+                    </div>
+                <div class="right-column-login text-center">
+                    <p>Have an account?<a href="index.html"> Login</a></p>
+                </div>
+                </div>
+            
+        </div>
+        
+    </body>
+</html>

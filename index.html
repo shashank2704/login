@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style4.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+       <div class="form-box">
+        
+        <h1> Login here</h1>
+           <div class="input-box">
+               <i class="fa fa-envelope-o"></i>
+               <input type="email" placeholder="Email Id" required>
+           </div>
+           <div class="input-box">
+               <i class="fa fa-key"></i>
+               <input type="password" placeholder="Password" id="myInput" required>
+               <span class="eye" onclick="myFunction()">
+                   <i id="hide1" class="fa fa-eye"></i>
+                    <i id="hide2" class="fa fa-eye-slash"></i>
+                </span>
+           </div>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="comingsoon.html"><button type="button" class="login-btn">LOGIN</button></a>
+        <div id="container">
+           <br>
+           <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="re.html" style=" margin-right:0px; font-size:13px; font-family:Tahoma, Geneva, sans-serif;">Reset password?</a>
+    <a href="for.html" style=" margin-left:30px; font-size:13px; font-family:Tahoma, Geneva, sans-serif;">Forget password</a>
+    </div><br /><br /><br />
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           Don't have account?<a href="first.html" style="font-family:'Play', sans-serif;">&nbsp;Sign Up</a><br /><br /><br />
+<br /><br /><br />
+        </div> 
+        <script>
+        function myFunction()
+            {
+                var x= document.getElementById("myInput");
+                var y= document.getElementById("hide1");
+                var z= document.getElementById("hide2");
+                if(x.type === 'password')
+                    {
+                        x.type = "text";
+                        y.style.display = "block";
+                        z.style.display = "none";
+                        
+                    }
+                else
+                    {
+                        x.type = "password";
+                        y.style.display = "none";
+                        z.style.display = "block";
+                    }
+                
+            }
+        </script>
+        
+    </body>
+</html>
